@@ -4,6 +4,9 @@
         <h1>{{ .Title | markdownify }}</h1>
     </header>
     <div class="entry-content">
+        {{ .Description | markdownify }}
+    </div>
+    <div class="entry-content">
         {{ .Content | markdownify }}
     </div>
     <footer class="entry-footer">
